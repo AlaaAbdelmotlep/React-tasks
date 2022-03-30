@@ -10,10 +10,7 @@ const NewExpense = (props) => {
       ...enteredExpenseData,
       id: Math.random().toString(),
     };
-    // console.log("In NewExpense")
-    // console.log(expenseData);
     props.onAddExpense(expenseData);
-    // By doing that we left state Up to App component
   };
 
   return (
